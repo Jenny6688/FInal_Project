@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be patient to wait for your email!</title>
+</head>
+<style>
+    body {
+        text-align: center
+    }
+
+    p {
+        color: whitesmoke;
+        background-color: palevioletred;
+        font-size: 20px
+    }
+</style>
+
+<body>
+    {% if original_price != discounted_price %}
+    <p>
+        The original price of your products is {{original_price}}.
+        Your product is now on {{percent_off}}.
+        The discounted price is {{discounted_price}}.
+    </p>
+    {% else %}
+    <p>
+        The original price of your product is {{original_price}}.
+        Your have registered to receive a price drop alert for your chosen product. Once the price drops, you will receive
+        an email from us.
+    </p>
+    {% endif %}
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Price Check</title>
+</head>
+<style>
+    body {
+        background-color: whitesmoke;
+        text-align: center
+    }
+
+    h1 {
+        color: palevioletred;
+        background-color: gainsboro;
+        font-size: 60px
+    }
+</style>
+
+<body>
+    <h1>Hello!</h1>
+    <h2>
+        Welcome to the Amazon Price Check!
+    </h2>
+    <p>
+        This website helps you to track product prices from Amazon. It would automatically send you an email alert when the price drops. 
+    </p>
+    <p1>
+        Please enter the product's URL from Amazon and your email.
+    </p1>
+    <form action="/" method="post">
+        
+        <label for="product_url">
+            Product URL:
+            <input type="text" name="product_url" />
+        </label>
+        
+        <!-- <label for="email">
+            Your email:
+            <input type="text" name="email" />
+        </label> -->
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
