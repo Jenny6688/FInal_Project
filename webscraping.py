@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 # DOWNLOAD_URL = "https://www.amazon.com/Ferrero-Rocher-Confections-Collection-Valentines/dp/B07W6TR96W/ref=sr_1_2_sspa?crid=1ELEO1ERPMEVJ&keywords=chocolate&qid=1701900386&sprefix=chocolate%2Caps%2C153&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
 # DOWNLOAD_URL = "https://www.amazon.com/Plunder-Pirates-Life-Board-Game/dp/B083S1R2Z1/ref=sr_1_34?keywords=board+game&qid=1701902505&sr=8-34"
 # DOWNLOAD_URL = "https://www.amazon.com/Secret-Hitler/dp/B01JKD4HYC/ref=sr_1_29?keywords=board+game&qid=1701902505&sr=8-29" 
-DOWNLOAD_URL = "https://www.amazon.com/Czech-Games-00031CGE-Codenames/dp/B014Q1XX9S/ref=pd_bxgy_img_d_sccl_1/136-6692807-8557869?pd_rd_w=yXvTC&content-id=amzn1.sym.839d7715-b862-4989-8f65-c6f9502d15f9&pf_rd_p=839d7715-b862-4989-8f65-c6f9502d15f9&pf_rd_r=5RN95EDHJXC7N7TDNGBM&pd_rd_wg=MCi3K&pd_rd_r=3ed55677-57d0-4c97-bfed-7faac560fda5&pd_rd_i=B014Q1XX9S&psc=1"
+# DOWNLOAD_URL = "https://www.amazon.com/Czech-Games-00031CGE-Codenames/dp/B014Q1XX9S/ref=pd_bxgy_img_d_sccl_1/136-6692807-8557869?pd_rd_w=yXvTC&content-id=amzn1.sym.839d7715-b862-4989-8f65-c6f9502d15f9&pf_rd_p=839d7715-b862-4989-8f65-c6f9502d15f9&pf_rd_r=5RN95EDHJXC7N7TDNGBM&pd_rd_wg=MCi3K&pd_rd_r=3ed55677-57d0-4c97-bfed-7faac560fda5&pd_rd_i=B014Q1XX9S&psc=1"
 
 def download_page(url):
     """

@@ -21,15 +21,15 @@
 <body>
     {% if original_price != discounted_price %}
     <p>
-        The original price of your products is {{original_price}}.
-        Your product is now on {{percent_off}}.
-        The discounted price is {{discounted_price}}.
+        <div>The original price of your products is {{original_price}}.</div>
+        <div>Your product is now on {{percent_off}}.</div> 
+        <div>Discounted price is {{discounted_price}}.</div> 
     </p>
     {% else %}
     <p>
-        The original price of your product is {{original_price}}.
-        Your have registered to receive a price drop alert for your chosen product. Once the price drops, you will receive
-        an email from us.
+        <div>The original price of your product is {{original_price}}.</div>
+        <div>You have registered to receive a price drop alert for your chosen product. Once the price drops, you will receive
+            an email from us.</div> 
     </p>
     {% endif %}
 </body>
