@@ -8,32 +8,28 @@
     <title>Amazon Price Check</title>
     <style>
         body {
-            background-color: whitesmoke;
+            background-color: white;
             text-align: center;
         }
 
         h1 {
+            font-family: 'Segoe Script', sans-serif;
             color: palevioletred;
-            background-color: gainsboro;
             font-size: 60px;
+            background-color: whitesmoke;
         }
     </style>
 </head>
 
 <body>
-    <h1>Hello!</h1>
-    <h2>Welcome to the Amazon Price Check!</h2>
-    <p>
-        This website helps you to track product prices from Amazon. It would automatically send you an email alert when the price drops. 
-    </p>
-    <p>
-        Please enter the product's URL from Amazon and your email.
-    </p>
-    <form action="/" method="post">
-        <label for="product_url">Enter Product URL:</label>
+    <h1>Welcome to the Amazon Price Check!</h1>
+    <h2>Please enter the product's URL from Amazon and your email below.</h2>
+
+    <form action="/info" method="post">
+        <label for="product_url">Product URL:</label>
         <input type="text" id="product_url" name="product_url" required>
         
-        <label for="userinput_email">Enter Your Email:</label>
+        <label for="userinput_email">Your Email:</label>
         <input type="email" id="userinput_email" name="userinput_email" required>
 
         <button type="submit">Submit</button>
