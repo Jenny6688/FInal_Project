@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be patient to wait for your email!</title>
+    <title>Discount Info !</title>
     <style>
         body {
-            text-align: center;
-        }
-
-        p {
-            color: whitesmoke;
-            background-color: palevioletred;
-            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: palevioletred;
+            font-size: large;
         }
     </style>
 </head>
@@ -21,13 +21,13 @@
 <body>
     {% if original_price != discounted_price %}
     <p>
-        <div>Luckily, Your item is on a discount!</div>
-        <div>You will recieve an email from us soon for furthur informations.</div>
+    <div>Luckily, Your item is on a discount now!</div>
+    <div>You can go check the Amazon website and purchase it directly!</div>
     </p>
     {% else %}
     <p>
-        <div>Sorry, your item is not on a discount.</div>
-        <div>The original price of your product is {{original_price}}.</div> 
+    <div>Sorry, your item is not on a discount now. </div>
+    <div>Please wait patiently. We'll send you an email promptly once there's a discount!</div>
     </p>
     {% endif %}
 </body>
