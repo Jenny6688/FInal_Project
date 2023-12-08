@@ -22,35 +22,6 @@ def download_page(url):
 # # print(download_page(DOWNLOAD_URL).read())
 
 
-
-# def parse_html(html):
-#     """
-#     Analyze the html page, find the information and return the move list of tuples (title, year)
-#     """
-
-#     soup = BeautifulSoup(html, features="html.parser")
-#     # print(soup.prettify())
-#     price_info = soup.find("div", attrs={"id":"corePriceDisplay_desktop_feature_div"})
-
-#     try:
-#         list_pirce = price_info.find("span", attrs={"class":"a-size-small a-color-secondary aok-align-center basisPrice"})
-#         original_price_element = list_pirce.find("span", attrs={"aria-hidden": "true"})
-#         original_price = original_price_element.get_text() if original_price_element else None
-#         print(original_price)
-#     except:
-#         list_pirce = price_info.find("span", attrs={"class": "a-price aok-align-center reinventPricePriceToPayMargin priceToPay"})
-#         original_price = list_pirce.find("span", attrs={"aria-hidden": "true"}).get_text() if list_pirce else None
-#         print(original_price)
-    
-    
-#     new_price = price_info.find("span", attrs={"class": "a-price aok-align-center reinventPricePriceToPayMargin priceToPay"})
-#     discounted_price = new_price.find("span", attrs={"aria-hidden": "true"}).get_text() if new_price else None
-#     print(discounted_price)
-
-#     percent_off_element = price_info.find("span", attrs={"class": "a-size-large a-color-price savingPriceOverride aok-align-center reinventPriceSavingsPercentageMargin savingsPercentage"})
-#     percent_off = percent_off_element.get_text() if percent_off_element else None
-#     print(percent_off)
-
 def parse_html(html):
     """
     Analyze the html page, find the information and return the move list of tuples (title, year)
@@ -76,13 +47,6 @@ def parse_html(html):
 
     return original_price, discounted_price, percent_off
 
-
-# def main():
-#     url = DOWNLOAD_URL
-
-#     html = download_page(url)
-#     price_check = parse_html(html)
-#     print(price_check)
   
 def main(url):
     url = download_page(url)

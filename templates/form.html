@@ -2,48 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Price Check</title>
-</head>
-<style>
-    body {
-        background-color: whitesmoke;
-        text-align: center
-    }
+    <style>
+        body {
+            background-color: whitesmoke;
+            text-align: center;
+        }
 
-    h1 {
-        color: palevioletred;
-        background-color: gainsboro;
-        font-size: 60px
-    }
-</style>
+        h1 {
+            color: palevioletred;
+            background-color: gainsboro;
+            font-size: 60px;
+        }
+    </style>
+</head>
 
 <body>
     <h1>Hello!</h1>
-    <h2>
-        Welcome to the Amazon Price Check!
-    </h2>
+    <h2>Welcome to the Amazon Price Check!</h2>
     <p>
         This website helps you to track product prices from Amazon. It would automatically send you an email alert when the price drops. 
     </p>
-    <p1>
+    <p>
         Please enter the product's URL from Amazon and your email.
-    </p1>
+    </p>
     <form action="/" method="post">
+        <label for="product_url">Enter Product URL:</label>
+        <input type="text" id="product_url" name="product_url" required>
         
-        <label for="product_url">
-            Product URL:
-            <input type="text" name="product_url" />
-        </label>
-        
-        <!-- <label for="email">
-            Your email:
-            <input type="text" name="email" />
-        </label> -->
+        <label for="userinput_email">Enter Your Email:</label>
+        <input type="email" id="userinput_email" name="userinput_email" required>
 
-        <button>Submit</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 

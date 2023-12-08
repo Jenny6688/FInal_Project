@@ -2,34 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Be patient to wait for your email!</title>
-</head>
-<style>
-    body {
-        text-align: center
-    }
+    <style>
+        body {
+            text-align: center;
+        }
 
-    p {
-        color: whitesmoke;
-        background-color: palevioletred;
-        font-size: 20px
-    }
-</style>
+        p {
+            color: whitesmoke;
+            background-color: palevioletred;
+            font-size: 20px;
+        }
+    </style>
+</head>
 
 <body>
     {% if original_price != discounted_price %}
     <p>
-        <div>The original price of your products is {{original_price}}.</div>
-        <div>Your product is now on {{percent_off}}.</div> 
-        <div>Discounted price is {{discounted_price}}.</div> 
+        <div>Luckily, Your item is on a discount!</div>
+        <div>You will recieve an email from us soon for furthur informations.</div>
     </p>
     {% else %}
     <p>
-        <div>The original price of your product is {{original_price}}.</div>
-        <div>You have registered to receive a price drop alert for your chosen product. Once the price drops, you will receive
-            an email from us.</div> 
+        <div>Sorry, your item is not on a discount.</div>
+        <div>The original price of your product is {{original_price}}.</div> 
     </p>
     {% endif %}
 </body>

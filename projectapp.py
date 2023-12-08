@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from webscraping import parse_html, download_page
+from sendingemail import sending_email
 import traceback
 
 app = Flask(__name__)
@@ -11,8 +12,14 @@ def info():
     elif request.method == "POST":
         try:
             product_url = request.form.get("product_url")
+            userinput_email = request.form.get("userinput_email")
+
             product_html = download_page(product_url)
             original_price, discounted_price, percent_off = parse_html(product_html)
+
+            if original_price > discounted_price:
+                sending_email(userinput_email, percent_off)
+
             return render_template("result.html", original_price=original_price, discounted_price=discounted_price, percent_off=percent_off)
         except Exception as e:
             print(f"Error: {e}")
