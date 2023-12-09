@@ -34,6 +34,7 @@ def parse_html(html):
     soup = BeautifulSoup(html, features="html.parser")
 
     price_info = soup.find("div", attrs={"id": "corePriceDisplay_desktop_feature_div"})
+    # print(price_info)
 
     try:
         list_price = price_info.find(
@@ -82,13 +83,14 @@ def parse_html(html):
     return original_price, discounted_price, percent_off
 
 
-def main(url):
+def main():
     """
     This main function retrieves pricing information for the user's chosen product from the URL given by the user.
     """
-    url = download_page(url)
-    original_price, discounted_price, percent_off = parse_html(url)
-    return original_price, discounted_price, percent_off
+    url = 'https://www.amazon.com/Adventure-Players-Average-Playtime-Minutes/dp/B00U26V4VQ/ref=sr_1_2?crid=2DRD3QX1SMEHM&keywords=catan&qid=1701898336&sprefix=catan%2Caps%2C143&sr=8-2'
+    page = download_page(url)
+    original_price, discounted_price, percent_off = parse_html(page)
+    print(original_price, discounted_price, percent_off)
 
 
 if __name__ == "__main__":
