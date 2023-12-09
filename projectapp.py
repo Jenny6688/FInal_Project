@@ -86,6 +86,9 @@ def schedule_task():
 
 
 if __name__ == "__main__":
+    """
+    Utilize thread to enable the flask app and the schedule task run at the same time.
+    """
     thread = threading.Thread(target=schedule_task)  
     thread.start()
 
