@@ -5,8 +5,6 @@ Team Members:
 - Vicky Yan
 
 ## Purpose of the Project
-Nowadays, people has increased their dependencies of shopping on Amazon due to its convinience. However, people have limited information about when the products are going to have a discount. We came up with this solution of allowing users to sign up by inputting the URL of their preferred Amazon product and their email, then the website would automatically inform the users whenever there is a discount. 
-
 Nowadays, people rely heavily on the convenience of Amazon for their shopping needs. However, many customers lack sufficient information about when products will be discounted. To address this issue, we've developed a solution that allows users to sign up by simply inputting the URL of their desired Amazon product along with their email address. Our website will then automatically notify these users whenever there's a price drop or a discount available for their selected items. This service aims to keep usuers informed about the products' discounts, ensuring them never miss out on great deals.
 
 
