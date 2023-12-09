@@ -5,6 +5,10 @@ from config import password
 
 
 def sending_email(userinput_email, percent_off, discounted_price, original_price):
+    """
+    This function would send an email to the user regarding the price drop of the item chosen by the user. 
+    Parameters: userinput_email, percent_off, discounted_price, original_price.
+    """
     EMAIL_ADDRESS = "amazon.pricecheck.py@gmail.com"
     EMAIL_PASSWORD = password
     with smtplib.SMTP("smtp.gmail.com", 587) as smtp:

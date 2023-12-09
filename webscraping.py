@@ -27,7 +27,8 @@ def download_page(url):
 
 def parse_html(html):
     """
-    Analyze the html page, find the information and return the move list of tuples (title, year)
+    This function extracts pricing information from HTML content of the Amazon page of the product chosen by the user.
+    It would return a tuple containing original_price, discounted_price, and percent_off of the chosen product.
     """
 
     soup = BeautifulSoup(html, features="html.parser")
@@ -82,6 +83,9 @@ def parse_html(html):
 
 
 def main(url):
+    """
+    This main function retrieves pricing information for the user's chosen product from the URL given by the user.
+    """
     url = download_page(url)
     original_price, discounted_price, percent_off = parse_html(url)
     return original_price, discounted_price, percent_off
